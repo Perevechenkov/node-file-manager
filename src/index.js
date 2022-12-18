@@ -14,9 +14,7 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-rl.prompt();
 rl.on('line', async command => {
-  rl.prompt();
   if (/^.exit/.test(command)) return rl.close();
   try {
     await emit(command);
