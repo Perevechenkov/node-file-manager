@@ -2,8 +2,11 @@ import readline from 'node:readline';
 import { printGreeting, printFarewell } from './utils/getUsername.js';
 import printCurrentPath from './utils/path.js';
 import emit from './utils/commandEmitter.js';
+import { chdir } from 'node:process';
+import { homedir } from 'node:os';
 
 printGreeting();
+chdir(homedir());
 printCurrentPath();
 
 const rl = readline.createInterface({
