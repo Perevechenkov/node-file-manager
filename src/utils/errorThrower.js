@@ -1,7 +1,9 @@
-export const throwInvalidInput = () => {
+export const throwInvalidInput = err => {
+  console.log(err.message);
   throw new Error('Invalid input');
 };
 
-export const throwOperationFailed = () => {
+export const throwOperationFailed = err => {
+  console.log(err.message);
   throw new Error('Operation failed');
 };

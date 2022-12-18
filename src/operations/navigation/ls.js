@@ -18,7 +18,7 @@ export default async () => {
       .map(file => new File(file.name, file.isFile() ? 'file' : 'directory'));
     console.log('\n');
     console.table(sortedFiles);
-  } catch (error) {
-    throwOperationFailed();
+  } catch (err) {
+    throwOperationFailed(err);
   }
 };
