@@ -1,5 +1,7 @@
 import readlinePromises from 'node:readline/promises';
 
+console.log(`You are currently in ${process.cwd()}`);
+
 const args = Object.fromEntries(process.argv.map(arg => arg.split('=')));
 const username = args['--username'];
 console.log(`Welcome to the File Manager, ${username}!`);
