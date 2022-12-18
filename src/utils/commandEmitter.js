@@ -1,4 +1,4 @@
-import ls from '../operations/ls.js';
+import ls from '../operations/navigation/ls.js';
 
 const OPERATIONS = {
   ls,

@@ -1,6 +1,6 @@
 import { resolve } from 'node:path';
 import { readdir } from 'node:fs/promises';
-import { throwOperationFailed } from '../utils/errorThrower.js';
+import { throwOperationFailed } from '../../utils/errorThrower.js';
 
 export default async () => {
   class File {
