@@ -16,7 +16,6 @@ export default async () => {
     const sortedFiles = files
       .sort(file => (file.isFile() ? 1 : -1))
       .map(file => new File(file.name, file.isFile() ? 'file' : 'directory'));
-    console.log('\n');
     console.table(sortedFiles);
   } catch (err) {
     throwOperationFailed(err);
