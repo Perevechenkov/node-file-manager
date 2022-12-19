@@ -5,6 +5,7 @@ import cat from '../operations/files/cat.js';
 import add from '../operations/files/add.js';
 import rn from '../operations/files/rn.js';
 import cp from '../operations/files/cp.js';
+import mv from '../operations/files/mv.js';
 import { throwInvalidInput } from './errorThrower.js';
 
 const OPERATIONS = {
@@ -34,6 +35,10 @@ const OPERATIONS = {
   },
   cp: {
     func: cp,
+    argsCount: 2,
+  },
+  mv: {
+    func: mv,
     argsCount: 2,
   },
 };
