@@ -9,6 +9,8 @@ import mv from '../operations/files/mv.js';
 import rm from '../operations/files/rm.js';
 import os from '../operations/os/os.js';
 import hash from '../operations/hash/hash.js';
+import compress from '../operations/zip/compress.js';
+import decompress from '../operations/zip/decompress.js';
 import { throwInvalidInput } from './errorThrower.js';
 
 const OPERATIONS = {
@@ -55,6 +57,14 @@ const OPERATIONS = {
   hash: {
     func: hash,
     argsCount: 1,
+  },
+  compress: {
+    func: compress,
+    argsCount: 2,
+  },
+  decompress: {
+    func: decompress,
+    argsCount: 2,
   },
 };
 
