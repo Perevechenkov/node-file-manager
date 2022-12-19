@@ -7,6 +7,7 @@ import rn from '../operations/files/rn.js';
 import cp from '../operations/files/cp.js';
 import mv from '../operations/files/mv.js';
 import rm from '../operations/files/rm.js';
+import os from '../operations/os/os.js';
 import { throwInvalidInput } from './errorThrower.js';
 
 const OPERATIONS = {
@@ -44,6 +45,10 @@ const OPERATIONS = {
   },
   rm: {
     func: rm,
+    argsCount: 1,
+  },
+  os: {
+    func: os,
     argsCount: 1,
   },
 };
