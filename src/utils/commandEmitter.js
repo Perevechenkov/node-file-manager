@@ -3,6 +3,7 @@ import up from '../operations/navigation/up.js';
 import cd from '../operations/navigation/cd.js';
 import cat from '../operations/files/cat.js';
 import add from '../operations/files/add.js';
+import rn from '../operations/files/rn.js';
 import { throwInvalidInput } from './errorThrower.js';
 
 const OPERATIONS = {
@@ -25,6 +26,10 @@ const OPERATIONS = {
   add: {
     func: add,
     argsCount: 1,
+  },
+  rn: {
+    func: rn,
+    argsCount: 2,
   },
 };
 
