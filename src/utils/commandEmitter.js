@@ -8,6 +8,7 @@ import cp from '../operations/files/cp.js';
 import mv from '../operations/files/mv.js';
 import rm from '../operations/files/rm.js';
 import os from '../operations/os/os.js';
+import hash from '../operations/hash/hash.js';
 import { throwInvalidInput } from './errorThrower.js';
 
 const OPERATIONS = {
@@ -49,6 +50,10 @@ const OPERATIONS = {
   },
   os: {
     func: os,
+    argsCount: 1,
+  },
+  hash: {
+    func: hash,
     argsCount: 1,
   },
 };
