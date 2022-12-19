@@ -2,6 +2,7 @@ import ls from '../operations/navigation/ls.js';
 import up from '../operations/navigation/up.js';
 import cd from '../operations/navigation/cd.js';
 import cat from '../operations/files/cat.js';
+import add from '../operations/files/add.js';
 import { throwInvalidInput } from './errorThrower.js';
 
 const OPERATIONS = {
@@ -19,6 +20,10 @@ const OPERATIONS = {
   },
   cat: {
     func: cat,
+    argsCount: 1,
+  },
+  add: {
+    func: add,
     argsCount: 1,
   },
 };
